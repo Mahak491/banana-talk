@@ -6,29 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banana talk</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
+
+        body{
+            margin: 0px;
+        }
+
+        *{
+            text-align: center;
+        }
+
+        .conatiner{
+            padding: 0rem 1rem;
+        }
+
+        .navigation{
+            background-color:#fcd34d;
+            color: black;
+            padding: 2rem;
+            /* text-align: center; */
+            font-family: Gentium Plus,sans-serif;
+            font-weight: bolder;
+            font-size:3rem ;
+            
+        }
+
         textarea{
             padding:1rem;
             margin: 1rem;
-            width:80%;
-            height: 10vh;
+            width:50%;
+            height: 20vh;
+            font-family: Gentium Plus,sans-serif; 
+            color: black;
+            border-top-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
         }
 
         #output{
             border: 1px solid black;
             padding:1rem;
             margin: 1rem;
-            width:80%;
-            height: 10vh;
+            width:50%;
+            height: 20vh;
+            font-family: Gentium Plus,sans-serif; 
+            color: black;
+            border-top-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            margin:auto;
         }
 
+        #btn-translate{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: auto;
+            padding: 1rem;
+            background-color: #fcd34d;
+            border-style: none;
+            border-radius: 1rem;
+            font-weight: bold;
+            font-family: Gentiu Plus,sans-serif;
+        }
+
+        .footer{
+            background-color: #fcd34d;
+            font-family: Gentium Plus,sans-serif; 
+        }
+
+        div,p{
+            padding: 1rem;
+        }
+       
     </style>
 </head>
 <body>
-    <h1>talk banana</h1>
-    <textarea id="txt-input" placeholder="Write some sentence and we will convert it into banana"></textarea>
-    <button class ="btn-translate" id="btn-translate">Translate</button>
-    <div style="font-size:larger;">Output will appear here 👇</div>
+    <nav class="navigation container">
+        <h>
+            banana talk
+        </h>     
+    </nav>
+
+    <textarea id="txt-input" placeholder="put your message here which you want to convert it into banana language"></textarea>
+    <button id="btn-translate">Translate to banana</button>
+    <br/>
+    <div style="font-size:larger; font-family: Gentium Plus,sans-serif;">translation will appear here 👇</div>
     <div id="output"></div>
+    <br/>
+    <br/>
+    <footer class="footer">
+        <div class="container">
+         about 
+         <p>Are you a fan of Minion fan? yes! Then use this converter and convert the english to Minion speak.
+             Have fun!!!</p>
+    </div>
+    </footer>
     <script src="app.js" type="text/javascript"></script>
 </body>
 </html>
